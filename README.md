@@ -10,7 +10,20 @@ Check out the live demo on
 
 ![Animated Book](https://github.com/Hunterdii/BookAnimation/assets/124852522/d1b6f10a-d376-4137-a367-c851bcfed353)
 
+## Embed preview (use on your site)
 
+```html
+<iframe
+  src="https://raw.githack.com/Krapath/BookAnimation/gh-pages/index.html"
+  width="100%"
+  height="600"
+  style="border:0;"
+  loading="lazy"
+  title="BookAnimation preview">
+</iframe>
+```
+
+> Note: The original repository `Hunterdii/BookAnimation` is archived (read-only), so I created a fork and deployed a preview. If you unarchive the original repo I can open a PR to merge these changes back.
 
 ## How it Works
 
