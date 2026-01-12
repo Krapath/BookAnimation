@@ -17,4 +17,3 @@ Check out the live demo on
 The animated book is created using a combination of Markdown and HTML. Each page of the book is represented by a section with a unique set of images.
 bash
  ```
-https://hunterdii.github.io/BookAnimation/
