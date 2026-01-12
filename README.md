@@ -10,7 +10,7 @@ Check out the live demo on
 
 ![Animated Book](https://github.com/Hunterdii/BookAnimation/assets/124852522/d1b6f10a-d376-4137-a367-c851bcfed353)
 
-## Embed preview (use on your site)
+## Embed preview 
 
 ```html
 <iframe
