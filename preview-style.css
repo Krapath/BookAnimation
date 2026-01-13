@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Remove page scroll (hide scrollbar) */
+body {
+  font-family: "Indie Flower", cursive;
+  background-color: #e1dfdb;
+  color: #555;
+  text-align: center;
+  padding: 4em 0;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 420px;
+  border: #fff solid 2px;
+  border-radius: 4px;
+  height: 420px;
+  margin: 0 auto;
+}
+
+.title {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 100%;
+  font-size: 1.6em;
+  font-weight: normal;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.credit { display:none }
+
+.book {
+  position: relative;
+  perspective: 630px;
+  perspective-origin: center 50px;
+  transform: scale(1.2);
+  filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.25));
+  margin: 3.2em auto 0;
+}
+
+.page {
+  width: 210px;
+  height: 300px;
+  background-color: #bbb;
+  position: absolute;
+  top: 0px;
+  right: 50%;
+  transform-origin: 100% 50%;
+  border: solid #555 2px;
+  background-size: 420px 300px;
+  background-position: center;
+  transform-style: preserve-3d;
+  transition: transform 200ms ease-out;
+  backface-visibility: hidden;
+  z-index: 2;
+}
+.page::after { display:none }
+
+/* Disable the original auto animations if present */
+.page, .flip { animation: none !important }
+
+.gap { display:none }
+
+.pages, .flips { transform-style: preserve-3d }
+
+/* ensure the stacked pages behind are slightly offset */
+.page:not(.active) { z-index: 1 }
+
+/* simple preview controls */
+.controls { margin-top: 8px }
+.btn { display:inline-block; padding:6px 10px; border-radius:6px; background:#fff; border:1px solid #ccc; cursor:pointer; margin:0 6px }
+
+/* hide default touch highlight */
+* { -webkit-tap-highlight-color: transparent }
+
+.hint { font-size:0.9em; color:#666; margin-top:8px }
