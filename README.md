@@ -14,7 +14,7 @@ Check out the live demo on
 
 ```html
 <iframe
-  src="https://raw.githack.com/Krapath/BookAnimation/gh-pages/index.html"
+  src="https://Krapath.github.io/BookAnimation/index.html"
   width="100%"
   height="600"
   style="border:0;"
